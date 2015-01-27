@@ -5,6 +5,7 @@ import com.google.gwt.polymerdemo.myelemental.Event;
 import com.google.gwt.polymerdemo.myelemental.EventListener;
 import com.google.gwt.polymerdemo.polymerapis.CoreDrawerPanel;
 import com.google.gwt.polymerdemo.polymerapis.CoreIconButton;
+import com.google.gwt.polymerdemo.polymerapis.CoreResponsiveChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.Window;
@@ -13,9 +14,8 @@ import com.google.gwt.user.client.ui.HTMLPanel;
 
 public class MyView extends Composite {
 
-  private static MyWidgetUiBinder uiBinder = GWT.create(MyWidgetUiBinder.class);
-
-  interface MyWidgetUiBinder extends UiBinder<HTMLPanel, MyView> {}
+  interface Binder extends UiBinder<HTMLPanel, MyView> {}
+  private static Binder binder = GWT.create(Binder.class);
 
   @UiField
   CoreIconButton menuButton;
@@ -27,17 +27,28 @@ public class MyView extends Composite {
   CoreDrawerPanel drawerPanel;
   
   public MyView() {
-    initWidget(uiBinder.createAndBindUi(this));
+    initWidget(binder.createAndBindUi(this));
     
+    menuButton.setHidden(!drawerPanel.getNarrow());
     menuButton.addEventListener("click", new EventListener() {
-      @Override public void handleEvent(Event event) {
+      @Override 
+      public void handleEvent(Event event) {
         drawerPanel.togglePanel();
       }
     });
 
     starButton.addEventListener("click", new EventListener() {
-      @Override public void handleEvent(Event event) {
+      @Override 
+      public void handleEvent(Event event) {
         Window.alert("You pressed the star!");
+      }
+    });
+    
+    drawerPanel.addEventListener("core-responsive-change", new EventListener() {   
+      @Override
+      public void handleEvent(Event event) {
+        boolean isNowNarrow = ((CoreResponsiveChangeEvent) event).getDetail().getNarrow();
+        menuButton.setHidden(!isNowNarrow);
       }
     });
   }
