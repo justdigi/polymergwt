@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<project name="PolymerGwtApp" default="build" basedir=".">
+<project name="PolymerGwt" default="build" basedir=".">
   <!-- Arguments to gwtc and devmode targets -->
   <property name="gwt.args" value="" />
 
@@ -48,7 +48,7 @@
       <arg value="war"/>
       <!-- Additional arguments like -style PRETTY or -logLevel DEBUG -->
       <arg line="${gwt.args}"/>
-      <arg value="com.google.gwt.demo.PolymerGwtApp"/>
+      <arg value="com.google.gwt.polymerdemo.PolymerGwt"/>
     </java>
   </target>
 
@@ -60,15 +60,15 @@
         <pathelement location="${gwt.sdk}/gwt-codeserver.jar"/>
       </classpath>
       <arg value="-startupUrl"/>
-      <arg value="PolymerGwtApp.html"/>
+      <arg value="PolymerGwt.html"/>
       <arg value="-XjsInteropMode"/>
       <arg value="JS"/>
       <arg line="-war"/>
       <arg value="war"/>
       <!-- Additional arguments like -style PRETTY, -logLevel DEBUG or -nosuperDevMode -->
       <arg line="${gwt.args}"/>
-      <arg value="com.google.gwt.demo.PolymerGwtApp"/>
-      <arg value="com.google.gwt.demo.PolymerGwtApp"/>
+      <arg value="com.google.gwt.polymerdemo.PolymerGwt"/>
+      <arg value="com.google.gwt.polymerdemo.PolymerGwt"/>
     </java>
   </target>
 
@@ -140,12 +140,12 @@ Test targets suppressed because -junit argument was not specified when running w
   <target name="build" depends="gwtc" description="Build this project" />
 
   <target name="war" depends="build" description="Create a war file">
-    <zip destfile="PolymerGwtApp.war" basedir="war"/>
+    <zip destfile="PolymerGwt.war" basedir="war"/>
   </target>
 
   <target name="clean" description="Cleans this project">
     <delete dir="war/WEB-INF/classes" failonerror="false" />
-    <delete dir="war/polymergwtapp" failonerror="false" />
+    <delete dir="war/polymergwt" failonerror="false" />
   </target>
 
 </project>

@@ -1,8 +1,8 @@
-package com.google.gwt.demo.polymerapis;
+package com.google.gwt.polymerdemo.polymerapis;
 
 import com.google.gwt.core.client.js.JsProperty;
 import com.google.gwt.core.client.js.JsType;
-import com.google.gwt.demo.myelemental.HTMLElement;
+import com.google.gwt.polymerdemo.myelemental.HTMLElement;
 
 @JsType
 public interface CoreDrawerPanel extends HTMLElement {

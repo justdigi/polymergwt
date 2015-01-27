@@ -1,10 +1,10 @@
-package com.google.gwt.demo.entry;
+package com.google.gwt.polymerdemo.entry;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.demo.myelemental.Event;
-import com.google.gwt.demo.myelemental.EventListener;
-import com.google.gwt.demo.polymerapis.CoreDrawerPanel;
-import com.google.gwt.demo.polymerapis.CoreIconButton;
+import com.google.gwt.polymerdemo.myelemental.Event;
+import com.google.gwt.polymerdemo.myelemental.EventListener;
+import com.google.gwt.polymerdemo.polymerapis.CoreDrawerPanel;
+import com.google.gwt.polymerdemo.polymerapis.CoreIconButton;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Composite;

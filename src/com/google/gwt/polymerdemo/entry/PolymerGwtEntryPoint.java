@@ -1,4 +1,4 @@
-package com.google.gwt.demo.entry;
+package com.google.gwt.polymerdemo.entry;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;

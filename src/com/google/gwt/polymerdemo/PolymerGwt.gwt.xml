@@ -20,7 +20,7 @@
   <!-- Other module inherits                                      -->
 
   <!-- Specify the app entry point class.                         -->
-  <entry-point class='com.google.gwt.demo.entry.PolymerGwtEntryPoint'/>
+  <entry-point class='com.google.gwt.polymerdemo.entry.PolymerGwtEntryPoint'/>
 
   <!-- Specify the paths for translatable code                    -->
   <source path='entry'/>
