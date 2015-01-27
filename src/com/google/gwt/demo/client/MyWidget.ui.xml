@@ -9,7 +9,7 @@
 
   <gwt:HTMLPanel>
 	  <core-toolbar class="{res.css.toolbar}">
-	    <core-icon-button ui:field="coreIconButton" icon="menu" />
+	    <core-icon-button ui:field="menuButton" icon="menu" />
 	    <core-icon-button />
 	    <core-icon-button />
 	  </core-toolbar>
