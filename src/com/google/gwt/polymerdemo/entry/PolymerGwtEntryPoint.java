@@ -16,6 +16,6 @@ public class PolymerGwtEntryPoint implements EntryPoint {
     GWT.<PolymerGwtResources>create(PolymerGwtResources.class)
         .css().ensureInjected();
     
-    RootPanel.get().add(new MyWidget());
+    RootPanel.get().add(new MyView());
   }
 }

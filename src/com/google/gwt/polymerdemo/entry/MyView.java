@@ -11,11 +11,11 @@ import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTMLPanel;
 
-public class MyWidget extends Composite {
+public class MyView extends Composite {
 
   private static MyWidgetUiBinder uiBinder = GWT.create(MyWidgetUiBinder.class);
 
-  interface MyWidgetUiBinder extends UiBinder<HTMLPanel, MyWidget> {}
+  interface MyWidgetUiBinder extends UiBinder<HTMLPanel, MyView> {}
 
   @UiField
   CoreIconButton menuButton;
@@ -26,7 +26,7 @@ public class MyWidget extends Composite {
   @UiField
   CoreDrawerPanel drawerPanel;
   
-  public MyWidget() {
+  public MyView() {
     initWidget(uiBinder.createAndBindUi(this));
     
     menuButton.addEventListener("click", new EventListener() {
