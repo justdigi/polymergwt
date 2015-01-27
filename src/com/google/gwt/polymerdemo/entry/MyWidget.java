@@ -7,6 +7,7 @@ import com.google.gwt.polymerdemo.polymerapis.CoreDrawerPanel;
 import com.google.gwt.polymerdemo.polymerapis.CoreIconButton;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTMLPanel;
 
@@ -20,6 +21,9 @@ public class MyWidget extends Composite {
   CoreIconButton menuButton;
   
   @UiField
+  CoreIconButton starButton;
+  
+  @UiField
   CoreDrawerPanel drawerPanel;
   
   public MyWidget() {
@@ -28,6 +32,12 @@ public class MyWidget extends Composite {
     menuButton.addEventListener("click", new EventListener() {
       @Override public void handleEvent(Event event) {
         drawerPanel.togglePanel();
+      }
+    });
+
+    starButton.addEventListener("click", new EventListener() {
+      @Override public void handleEvent(Event event) {
+        Window.alert("You pressed the star!");
       }
     });
   }
