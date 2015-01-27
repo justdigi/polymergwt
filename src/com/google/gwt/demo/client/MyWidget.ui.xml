@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder     
+    xmlns:gwt="urn:import:com.google.gwt.user.client.ui"
+    xmlns:ui="urn:ui:com.google.gwt.uibinder">
+  <gwt:HTMLPanel>
+	  <core-toolbar>
+	    <core-icon-button ui:field="coreIconButton" icon="menu" />
+	    <core-icon-button />
+	    <core-icon-button />
+	  </core-toolbar>
+	  <core-drawer-panel ui:field="coreDrawerPanel">
+	    <div drawer="">Drawer</div>
+	    <div main="">
+	      main
+	    </div>
+	  </core-drawer-panel>
+  </gwt:HTMLPanel>
+</ui:UiBinder>

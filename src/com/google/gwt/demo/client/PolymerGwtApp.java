@@ -1,8 +1,8 @@
 package com.google.gwt.demo.client;
 
-import com.google.gwt.demo.shared.FieldVerifier;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.demo.shared.FieldVerifier;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyCodes;
@@ -48,10 +48,12 @@ public class PolymerGwtApp implements EntryPoint {
 
     // Add the nameField and sendButton to the RootPanel
     // Use RootPanel.get() to get the entire body element
-    RootPanel.get("nameFieldContainer").add(nameField);
-    RootPanel.get("sendButtonContainer").add(sendButton);
-    RootPanel.get("errorLabelContainer").add(errorLabel);
+//    RootPanel.get("nameFieldContainer").add(nameField);
+//    RootPanel.get("sendButtonContainer").add(sendButton);
+//    RootPanel.get("errorLabelContainer").add(errorLabel);
 
+    RootPanel.get().add(new MyWidget());
+    
     // Focus the cursor on the name field when the app loads
     nameField.setFocus(true);
     nameField.selectAll();
