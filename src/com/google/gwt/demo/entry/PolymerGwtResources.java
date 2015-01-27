@@ -1,4 +1,4 @@
-package com.google.gwt.demo.client;
+package com.google.gwt.demo.entry;
 
 import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.CssResource;

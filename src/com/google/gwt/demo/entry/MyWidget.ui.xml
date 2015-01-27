@@ -5,7 +5,7 @@
 
   <ui:with
       field="res"
-      type="com.google.gwt.demo.client.PolymerGwtResources" />
+      type="com.google.gwt.demo.entry.PolymerGwtResources" />
 
   <gwt:HTMLPanel>
 	  <core-toolbar class="{res.css.toolbar}">

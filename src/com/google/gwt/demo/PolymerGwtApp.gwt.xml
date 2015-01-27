@@ -20,11 +20,11 @@
   <!-- Other module inherits                                      -->
 
   <!-- Specify the app entry point class.                         -->
-  <entry-point class='com.google.gwt.demo.client.PolymerGwtApp'/>
+  <entry-point class='com.google.gwt.demo.entry.PolymerGwtApp'/>
 
   <!-- Specify the paths for translatable code                    -->
-  <source path='client'/>
-  <source path='shared'/>
+  <source path='entry'/>
+  <source path='myelemental'/>
 
   <!-- allow Super Dev Mode -->
   <add-linker name="xsiframe"/>
