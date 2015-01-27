@@ -1,0 +1,21 @@
+.toolbar {
+  z-index: 10;	
+}
+
+.drawer {
+	background: lightblue;
+}
+
+.main {
+	background: lightgreen;
+}
+
+.drawer, .main {
+  display: flex;
+  align-items: center;
+}
+
+.drawer > *, .main > * {
+	flex: 1;
+  text-align: center;	
+}

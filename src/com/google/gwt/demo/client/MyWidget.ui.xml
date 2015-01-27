@@ -2,16 +2,23 @@
 <ui:UiBinder     
     xmlns:gwt="urn:import:com.google.gwt.user.client.ui"
     xmlns:ui="urn:ui:com.google.gwt.uibinder">
+
+  <ui:with
+      field="res"
+      type="com.google.gwt.demo.client.PolymerGwtResources" />
+
   <gwt:HTMLPanel>
-	  <core-toolbar>
+	  <core-toolbar class="{res.css.toolbar}">
 	    <core-icon-button ui:field="coreIconButton" icon="menu" />
 	    <core-icon-button />
 	    <core-icon-button />
 	  </core-toolbar>
 	  <core-drawer-panel ui:field="coreDrawerPanel">
-	    <div drawer="">Drawer</div>
-	    <div main="">
-	      main
+	    <div drawer="" class="{res.css.drawer}">
+	      <span>Drawer</span>
+	    </div>
+	    <div main="" class="{res.css.main}">
+	      <span>Main</span>
 	    </div>
 	  </core-drawer-panel>
   </gwt:HTMLPanel>
