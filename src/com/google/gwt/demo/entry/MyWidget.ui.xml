@@ -13,7 +13,7 @@
 	    <core-icon-button />
 	    <core-icon-button />
 	  </core-toolbar>
-	  <core-drawer-panel ui:field="coreDrawerPanel">
+	  <core-drawer-panel ui:field="drawerPanel">
 	    <div drawer="" class="{res.css.drawer}">
 	      <span>Drawer</span>
 	    </div>
