@@ -42,6 +42,8 @@
         <pathelement location="src"/>
         <path refid="project.class.path"/>
       </classpath>
+      <arg value="-XjsInteropMode"/>
+      <arg value="JS"/>
       <arg line="-war"/>
       <arg value="war"/>
       <!-- Additional arguments like -style PRETTY or -logLevel DEBUG -->
@@ -59,6 +61,8 @@
       </classpath>
       <arg value="-startupUrl"/>
       <arg value="PolymerGwtApp.html"/>
+      <arg value="-XjsInteropMode"/>
+      <arg value="JS"/>
       <arg line="-war"/>
       <arg value="war"/>
       <!-- Additional arguments like -style PRETTY, -logLevel DEBUG or -nosuperDevMode -->
