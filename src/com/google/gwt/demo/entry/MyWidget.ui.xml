@@ -18,7 +18,8 @@
 	      <span>Drawer</span>
 	    </div>
 	    <div main="" class="{res.css.main}">
-	      <span>Main</span>
+	      <p>Narrow this window to use the drawer toggle button.<br/>
+	      Widen this window to open the drawer out automatically.</p>
 	    </div>
 	  </core-drawer-panel>
   </gwt:HTMLPanel>
