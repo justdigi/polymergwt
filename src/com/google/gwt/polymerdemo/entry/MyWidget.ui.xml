@@ -10,7 +10,7 @@
   <gwt:HTMLPanel>
 	  <core-toolbar class="{res.css.toolbar}">
 	    <core-icon-button ui:field="menuButton" icon="menu" />
-	    <core-icon-button />
+	    <core-icon-button src="{res.star.getSafeUri"/>
 	    <core-icon-button />
 	  </core-toolbar>
 	  <core-drawer-panel ui:field="drawerPanel">
