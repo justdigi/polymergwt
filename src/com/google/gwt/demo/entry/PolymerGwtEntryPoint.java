@@ -7,7 +7,7 @@ import com.google.gwt.user.client.ui.RootPanel;
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
  */
-public class PolymerGwtApp implements EntryPoint {
+public class PolymerGwtEntryPoint implements EntryPoint {
 
   /**
    * This is the entry point method.
