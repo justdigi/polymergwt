@@ -7,7 +7,7 @@
 
   <!-- Default page to serve -->
   <welcome-file-list>
-    <welcome-file>PolymerGwtApp.html</welcome-file>
+    <welcome-file>PolymerGwt.html</welcome-file>
   </welcome-file-list>
 
 </web-app>
