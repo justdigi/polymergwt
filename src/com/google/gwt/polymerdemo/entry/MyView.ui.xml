@@ -15,11 +15,11 @@
 	  </core-toolbar>
 	  <core-drawer-panel ui:field="drawerPanel">
 	    <div drawer="" class="{res.css.drawer}">
-	      <span>Drawer</span>
+	      Drawer
 	    </div>
 	    <div main="" class="{res.css.main}">
-	      <p>Narrow this window to use the drawer toggle button.<br/>
-	      Widen this window to open the drawer out automatically.</p>
+	      Narrow this window to use the drawer toggle button.<br/>
+	      Widen this window to open the drawer out automatically.
 	    </div>
 	  </core-drawer-panel>
   </gwt:HTMLPanel>

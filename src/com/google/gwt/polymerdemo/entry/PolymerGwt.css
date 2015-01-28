@@ -14,9 +14,5 @@
 .drawer, .main {
   display: flex;
   align-items: center;
-}
-
-.drawer > *, .main > * {
-	flex: 1;
-  text-align: center;	
+  justify-content: center;
 }
