@@ -148,4 +148,15 @@ Test targets suppressed because -junit argument was not specified when running w
     <delete dir="war/polymergwt" failonerror="false" />
   </target>
 
+  <target name="eclipse.generate" depends="libs" description="Generate eclipse project">
+    <java failonerror="true" fork="true" classname="com.google.gwt.user.tools.WebAppCreator">
+      <classpath>
+        <path refid="project.class.path"/>
+      </classpath>
+      <arg value="-XonlyEclipse"/>
+      <arg value="-ignore"/>
+      <arg value="com.google.gwt.polymerdemo.PolymerGwt"/>
+    </java>
+  </target>
+
 </project>
