@@ -1,18 +1,21 @@
-Sample code for using Polymer Web Components with GWT. For more information on Polymer see
-http://polymer-project.org. This sample code was originally written to accompany a talk at
-GWT.create2015. Slides from the talk are at http://goo.gl/eVFPsy.
+Sample code for using Polymer Web Components with GWT. For more information on
+Polymer see http://polymer-project.org. This sample code was originally written
+to accompany a talk at GWT.create2015. Slides from the talk are at 
+http://goo.gl/eVFPsy.
  
-In order to get programmatic access to the Polymer elements, we use new JsInterop facilities
-in GWT 2.7. This means you *must* enable JsInterop when you build this project or run in
-SuperDevMode. This is done with the flag "-XjsInteropMode JS".
+In order to get programmatic access to the Polymer elements, we use new 
+JsInterop facilities in GWT 2.7. This means you *must* enable JsInterop when you
+build this project or run in SuperDevMode. This is done with the flag 
+"-XjsInteropMode JS".
 
-The "polymerstubs" package uses JsInterop's JsType interfaces to declare just enough of the polymer
-API to implement this sample. The Polymer team promises they will be adding JsDocs to all of their
-APIs so that GWT stubs can be generated automatically.
+The "polymerstubs" package uses JsInterop's JsType interfaces to declare just 
+enough of the polymer API to implement this sample. The Polymer team promises 
+they will be adding JsDocs to all of their APIs so that GWT stubs can be 
+generated automatically.
 
-The "myelemental" package uses JsType interfaces to declare just enough of the modern DOM API
-to support the Polymer stubs. GWT 3.0 plans to provide complete, and evergreen DOM APIs 
-automagically as part of its Elemental 2.0 initiative.
+The "myelemental" package uses JsType interfaces to declare just enough of the 
+modern DOM API to support the Polymer stubs. GWT 3.0 plans to provide complete,
+and evergreen DOM APIs automagically as part of its Elemental 2.0 initiative.
 
 Have fun!
 
