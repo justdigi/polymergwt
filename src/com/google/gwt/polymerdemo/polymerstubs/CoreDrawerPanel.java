@@ -1,4 +1,4 @@
-package com.google.gwt.polymerdemo.polymerapis;
+package com.google.gwt.polymerdemo.polymerstubs;
 
 import com.google.gwt.core.client.js.JsProperty;
 import com.google.gwt.core.client.js.JsType;

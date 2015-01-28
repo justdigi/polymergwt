@@ -25,7 +25,7 @@
   <!-- Specify the paths for translatable code                    -->
   <source path='entry'/>
   <source path='myelemental'/>
-  <source path='polymerapis'/>
+  <source path='polymerstubs'/>
 
   <!-- allow Super Dev Mode -->
   <add-linker name="xsiframe"/>
