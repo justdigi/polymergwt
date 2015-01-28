@@ -1,5 +1,6 @@
 Sample code for using Polymer Web Components with GWT. For more information on Polymer see
-http://polymer-project.org.
+http://polymer-project.org. This sample code was originally written to accompany a talk at
+GWT.create2015. Slides from the talk are at http://goo.gl/eVFPsy.
  
 In order to get programmatic access to the Polymer elements, we use new JsInterop facilities
 in GWT 2.7. This means you *must* enable JsInterop when you build this project or run in
