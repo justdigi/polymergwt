@@ -7,4 +7,5 @@ import com.google.gwt.core.client.js.JsType;
 public interface HTMLElement extends Node {
   
   @JsProperty void setHidden(boolean visible);
+  @JsProperty Document getShadowRoot();
 }
